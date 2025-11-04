@@ -1,0 +1,25 @@
+#slideshow {
+    position: relative;
+
+}
+
+
+#slideshow img {
+    max-width: 100%;
+    height: auto;
+    border:2px;
+}
+
+.arrow {
+    color: peru;
+    text-decoration: none;
+    size: 10rem;
+    position: absolute;
+    top:50%;
+}
+#right-arrow {
+    right: 10px;
+}
+#left-arrow {
+    left: 10px;
+}
