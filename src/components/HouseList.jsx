@@ -9,8 +9,9 @@ const HouseList = (props) => {
     //after page has loaded
     useEffect(()=>{
         const loadHouses = async() => {
-            const response = await axios.get("https://portiaportia.github.io/json/house-plans.json");
-            setHouses(response.data.splice(0,props.num));
+           // const response = await axios.get("https://portiaportia.github.io/json/house-plans.json");
+           const response = await axios.get("http://localhost:3001/api/houses");
+            setHouses(response.data.slice(0,props.num));
         };
 
         loadHouses();
